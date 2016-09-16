@@ -2,8 +2,8 @@
 #include <Phant.h>  // Include Sparkfun Phant Libary for data logging
 
 /* WiFi Definitions */
-const char WiFiSSID[] = "Raynor Raiders";
-const char WiFiPSK[] = "hheast309";
+const char WiFiSSID[] = "IllinoisNet_Guest";
+const char WiFiPSK[] = "";
 
 /* Pin Definitions */
 const int LED_PIN = 5; // Onboard LED to indicate WiFi Status
@@ -84,7 +84,7 @@ void connectWiFi()  // Credits to www.sparkfun.com
   // WiFI.begin([ssid], [passkey]) initiates a WiFI connection
   // to the stated [ssid], using the [passkey] as a WPA, WPA2,
   // or WEP passphrase.
-  WiFi.begin(WiFiSSID, WiFiPSK);
+  WiFi.begin(WiFiSSID);
 
   // Use the WiFi.status() function to check if the ESP8266
   // is connected to a WiFi network.
